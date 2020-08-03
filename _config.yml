@@ -91,5 +91,4 @@ exclude:
   - "Rakefile"
   - "changelog.md"
   - "script"
-  - "vendor"
   - "thinkspace.gemspec"
