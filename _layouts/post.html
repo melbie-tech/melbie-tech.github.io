@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<div class="ui vertical blog masthead center aligned segment">
+
+  <div class="ui text container">
+      <h2 class="ui header">{{ page.title }}</h2>
+  </div>
+
+</div>
+
+<div class="blog-list-wrapper">
+
+  <div class="ui main text container blog">
+
+    <div class="ui vertical segment content">
+      <div class="ui middle aligned stackable grid container">
+        
+        <!-- r 1 -->
+        <div class="row">
+  
+          <!-- r 1 c 1 -->
+          <div class="column">
+            
+            <article class="post container" itemscope itemtype="http://schema.org/BlogPosting" style="background-color: #ffffff;">
+              <header class="post-header">
+                <p class="post-meta">
+                  {% if page.author %} 
+                  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name">
+                      {% for author in site.authors %}
+                        {% if author.short_name contains page.author %}
+                          {{ author.name }}
+                        {% endif %}
+                      {% endfor %}
+                    </span>
+                  </span>
+                  {% endif %} &middot;
+                  <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {% assign m = page.date | date: "%-m" %}
+                    {{ page.date | date: "%-d" }}
+                    {% case m %}
+                      {% when '1' %}Januari
+                      {% when '2' %}Februari
+                      {% when '3' %}Mars
+                      {% when '4' %}April
+                      {% when '5' %}Maj
+                      {% when '6' %}Juni
+                      {% when '7' %}Juli
+                      {% when '8' %}Augusti
+                      {% when '9' %}September
+                      {% when '10' %}Oktober
+                      {% when '11' %}November
+                      {% when '12' %}December
+                    {% endcase %}
+                    {{ page.date | date: ", %Y" }}
+                  </time>
+                  &middot; 
+                  {% for category in page.categories %}
+                      <a class="post-category" href="{{ '/blogg/kategori/' | prepend: site.baseurl | prepend: site.url }}{{ category | slugify: 'latin' }}">{{ category }}</a>
+                    {% if forloop.last %}{% else %} {% endif %}
+                  {% endfor %}
+                </p>
+              </header>
+              <div class="post-content" itemprop="articleBody">
+                {{ content }}
+                {% include post-share.html %}
+              </div>
+            </article>
+            
+            {% include comments.html %}
+          
+          </div>
+    
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+
+</div>

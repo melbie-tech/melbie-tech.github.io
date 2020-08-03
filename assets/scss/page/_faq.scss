@@ -1,0 +1,41 @@
+.masthead.segment {
+
+    &.faq {
+        h2 {
+            color: $white-color !important;
+        }
+
+        background: linear-gradient(
+            #534a6d80, 
+            #534a6d80
+          ), url(/assets/images/large/question-mark.jpg) no-repeat 0px -190px fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+.ui.styled.accordion .title {
+    color: $dark-50opacity-color;
+    &:hover {
+        color: $dark-color;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .masthead.segment {
+        &.faq {
+            background: linear-gradient(
+                #534a6d80, 
+                #534a6d80
+              ), url(/assets/images/large/question-mark.jpg) no-repeat -350px -100px fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    }
+
+}

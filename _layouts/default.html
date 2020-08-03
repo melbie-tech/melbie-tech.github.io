@@ -1,0 +1,36 @@
+---
+layout: compress
+published: true
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="ui sidebar inverted vertical menu">
+      <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}" class="header a-logo-link item">
+        <img class="sidebar-logo" src="/assets/images/logo/logo-inverted.svg">
+        <span class="logo-txt">{{ site.title_left | upcase }}</span>
+      </a>
+      <a class="item" href="{{ '/tjanster' | prepend: site.baseurl | prepend: site.url }}">
+        Tjänster
+      </a>
+      <a class="item" href="{{ '/bli-kund' | prepend: site.baseurl | prepend: site.url }}">
+        Bli kund
+      </a>
+      <a class="item" href="{{ '/blogg' | prepend: site.baseurl | prepend: site.url }}">
+        Blogg
+      </a>
+      <a class="item" href="{{ '/kontakta-oss' | prepend: site.baseurl | prepend: site.url }}">
+        Kontakta oss
+      </a>
+    </div>
+    <div class="pusher">
+      <main class="wrapper">
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+      </main>
+      {% include foot.html %}
+    </div>
+  </body>
+</html>

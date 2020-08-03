@@ -1,0 +1,85 @@
+<div class="ui vertical footer segment">
+  <div class="ui center aligned container">
+    <div class="container">
+      <div class="ui stackable grid">
+        <div class="three wide column">
+          <h4 class="ui header">Företaget</h4>
+          <div class="ui link list">
+            <a class="item" href="{{ '/om-melbie' | prepend: site.baseurl | prepend: site.url }}">Om Melbie</a>
+            <a class="item" href="{{ '/tjanster' | prepend: site.baseurl | prepend: site.url }}">Tjänster</a>
+            <a class="item"
+              href="{{ '/integritetspolicy' | prepend: site.baseurl | prepend: site.url }}">Integritetspolicy</a>
+            <a class="item" href="{{ '/karriar' | prepend: site.baseurl | prepend: site.url }}">Karriär</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui header">Kontakt</h4>
+          <div class="ui link list">
+            <a class="item" href="{{ '/kontakta-oss' | prepend: site.baseurl | prepend: site.url }}">Kontakta oss</a>
+            <a class="item" href="{{ '/bli-kund' | prepend: site.baseurl | prepend: site.url }}">Bli kund</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui header">Resurser</h4>
+          <div class="ui link list">
+            <a class="item" href="{{ '/blogg' | prepend: site.baseurl | prepend: site.url }}">Blogg</a>
+            <a class="item" href="{{ '/faq' | prepend: site.baseurl | prepend: site.url }}">Vanliga frågor</a>
+          </div>
+        </div>
+        <div class="seven wide right floated column">
+          <h4 class="ui header">Vår prioritet är nöjda kunder.</h4>
+          <p>Vi består av duktiga medarbetare som vill göra vardagen lättare för dig som företagare.
+            Kontakta oss så kan vi diskutera ert företag samt era framtidsvisioner och idéer.</p>
+
+          <form class="ui form"
+            action="https://melbie.us10.list-manage.com/subscribe/post?u=43c58c6016d576857f0e3cd30&amp;id=34dc07fa79"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+            <div class="field">
+              <h4 class="ui header">Nyhetsbrev</h4>
+              <div class="ui fluid action input">
+                <input type="email" value="" name="EMAIL" class="required email input100 placeholder0 m1-txt1"
+                  id="mce-EMAIL" placeholder="E-postadress">
+                <span class="focus-input100"></span>
+                <button type="submit" class="ui button" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+                  Lägg till!
+                </button>
+              </div>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_43c58c6016d576857f0e3cd30_34dc07fa79" tabindex="-1" value="">
+            </div>
+          </form>
+
+          <p class="newsletter-info">
+            Och oroa dig inte, vi gillar inte heller spam! Du kan säga upp prenumerationen när som helst.
+          </p>
+
+          <div class="ui massive horizontal list">
+            <div class="item">
+              <a href="https://www.linkedin.com/company/melbie" target="_blank"><i class="linkedin icon"></i></a>
+            </div>
+            <div class="item">
+              <a href="https://www.facebook.com/melbie.se" target="_blank"><i class="facebook icon"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="ui section divider"></div>
+    <img src="/assets/images/logo/logo-grey.svg" class="ui centered mini image">
+    <small class="copyright">
+      &copy; {{ site.time | date: '%Y' }} {{ site.company.name }} -
+      Skapad av entreprenörer för entreprenörer med
+      <span class="legal-line-heart">
+        <i class="fa fa-heart"></i>
+      </span>
+      i Karlstad
+    </small>
+  </div>
+</div>

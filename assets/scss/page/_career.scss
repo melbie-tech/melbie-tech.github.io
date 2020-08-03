@@ -1,0 +1,32 @@
+.masthead.segment {
+
+    &.career {
+        
+        h2 {
+            color: $white-color !important;
+        }
+
+        background: linear-gradient(
+            #534a6d80, 
+            #534a6d80
+          ), url(/assets/images/large/multiple-colors.jpg) no-repeat left center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .ui.main.container.karriar {
+        .ui.card {
+            .content {
+                font-size: 0.9em;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,99 @@
+---
+layout: default
+title: Karriär
+subtitle: Bli en av oss!
+---
+
+<div class="ui vertical masthead center aligned segment">
+
+    <div class="ui text container">
+        <h2 class="ui header" style="--word-total:6; --line-total:2;">
+			Bli en av  
+                <span>
+                    <span class="word" style="--word-index:5; --line-index:1;">
+                        oss!
+                    </span> 
+				</span>
+				<div class="sub header">Vi är alltid på jakt efter nya, intressanta personer på Melbie, både konsulter och LiA-studenter. 
+					Ta chansen att få jobba i ett entreprenörsdrivet bolag och med världens bästa kollegor!</div> 
+        </h2>
+	</div>
+
+</div>
+
+<div class="career-wrapper">
+
+	<div class="ui main text container karriar">
+		<div class="ui vertical segment content">
+			<div class="ui middle aligned stackable grid container">
+	
+				<!-- r 1 -->
+				<div class="row full-width pink">
+					<!-- r 1 c 1 -->
+					<div class="column">
+						<h2 class="ui header bold">
+							Lediga tjänster
+						</h2>
+					</div>
+				</div>
+
+				<!-- r 2 -->
+				<div class="row">
+					<!-- r 2 c 1 -->
+					<div class="column">
+						
+						{% assign size = site.careers.size %}
+						{% case size %}
+							{% when 1 %}{% assign gridsize = 'one' %}
+							{% when 2 %}{% assign gridsize = 'two' %}
+							{% when 3 %}{% assign gridsize = 'three' %}
+							{% when 4 %}{% assign gridsize = 'four' %}
+							{% when 5 %}{% assign gridsize = 'five' %}
+							{% when 6 %}{% assign gridsize = 'six' %}
+							{% when 7 %}{% assign gridsize = 'seven' %}
+							{% when 8 %}{% assign gridsize = 'eight' %}
+							{% when 9 %}{% assign gridsize = 'nine' %}
+							{% when 10 %}{% assign gridsize = 'ten' %}
+						{% endcase %}
+
+						{% if size == 1 %}
+
+							{% for career in site.careers %}
+							<a class="ui centered link card" href="/karriar/{{ career.link | slugify }}">
+								<div class="content">
+									<div class="center aligned melbie-color header">{{ career.description_title }}</div>
+								</div>
+								<div class="extra content">
+									<div class="center aligned">{{ career.city }}</div>
+								</div>
+							</a>
+							{% endfor %}
+
+						{% else %}
+
+							<div class="ui {{gridsize}} column grid">
+								{% for career in site.careers %}
+								<div class="column">
+									<a class="ui fluid link card" href="/karriar/{{ career.link | slugify }}">
+										<div class="content">
+											<div class="center aligned melbie-color header">{{ career.description_title }}</div>
+										</div>
+										<div class="extra content">
+											<div class="center aligned">{{ career.city }}</div>
+										</div>
+									</a>
+								</div>
+								{% endfor %}
+							</div>
+
+						{% endif %}
+
+
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	</div>
+
+</div>

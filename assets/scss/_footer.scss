@@ -1,0 +1,41 @@
+.ui.footer.segment {
+  border-top: 1px solid #22242626;
+  background-color: #fafafa;
+  padding-top: 2em;
+
+  .legal-line-heart {
+    color: red;
+  }
+
+  .link {
+    transition: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: none;
+    }
+  }
+  
+  .icon {
+    color: $dark-color;
+  }
+
+  .newsletter-info {
+    font-size: 0.7rem;
+  }
+
+  .ui.grid [class*="right floated"].column {
+    height: auto;
+  }
+}
+
+.ui.form .field > h4 {
+  text-align: left;
+}
+
+@media (max-width: 991px) {
+  .footer .container, .three-steps .container {
+    text-align: center;
+  }
+}

@@ -1,0 +1,142 @@
+<form class="ui form offert-form" action="https://submit-form.com/chZMjU4Xuyit2v1cQFBIR" target="_self" name="offert-form">
+    <input type="checkbox" name="_offert_id" style="display:none" tabindex="-1" autocomplete="off" />
+    <input type="hidden" name="_redirect" value="{{ site.url }}/bli-kund/offert-skickad/" />
+    <input type="hidden" name="_email.subject" value="Ny offertförfrågan via melbie.se!" />
+
+    <div class="ui error message"></div>
+
+    <h4 class="ui dividing header">Kontaktinfromation</h4>
+    <div class="field">
+        <label>Namn</label>
+        <input type="text" name="name" id="name" placeholder="Namn">
+    </div>
+    <div class="field">
+        <div class="two fields">
+            <div class="field">
+                <label>Telefon</label>
+                <input type="text" name="phone" id="phone" placeholder="Telefonnummer">
+            </div>
+            <div class="field">
+                <label>E-post</label>
+                <input type="email" name="email" id="email" placeholder="email@domain.tld">
+            </div>
+        </div>
+    </div>
+
+    <h4 class="ui dividing header">Företagsinformation</h4>
+    <div class="field">
+        <div class="two fields">
+            <div class="field">
+                <label>Företagsnamn</label>
+                <input type="text" name="companyname" id="companyname" placeholder="Företagsnamn">
+            </div>
+            <div class="field">
+                <label>Bolagsform</label>
+                <div class="ui selection dropdown typeofcompany">
+                    <input type="hidden" name="typeofcompany">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Bolagsform</div>
+                    <div class="menu">
+                        <div class="item" data-value="aktiebolag">Aktiebolag</div>
+                        <div class="item" data-value="enskildfirma">Enskild firma</div>
+                        <div class="item" data-value="handels-kommanditbolag">Handels/kommanditbolag</div>
+                        <div class="item" data-value="annat">Annat</div>
+                        <div class="item" data-value="vetej">Vet ej</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <div class="two fields">
+            <div class="field">
+                <label>Momsmetod</label>
+                <div class="ui selection dropdown momsmethod">
+                    <input type="hidden" name="momsmethod">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Momsmetod</div>
+                    <div class="menu">
+                        <div class="item" data-value="arsmoms">Årsmoms</div>
+                        <div class="item" data-value="kvartalsmoms">Kvartalsmoms</div>
+                        <div class="item" data-value="manadsmoms">Månadsmoms</div>
+                        <div class="item" data-value="ejmoms">Ej moms</div>
+                        <div class="item" data-value="vetej">Vet ej</div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Arbetsgivare</label>
+                <div class="ui selection dropdown employeer">
+                    <input type="hidden" name="employeer">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Arbetsgivare</div>
+                    <div class="menu">
+                        <div class="item" data-value="nej">Nej</div>
+                        <div class="item" data-value="ja">Ja</div>
+                        <div class="item" data-value="vetej">Vet ej</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <div class="two fields">
+            <div class="field">
+                <label>Bokföringsmetod</label>
+                <div class="ui selection dropdown bokforingsmetod">
+                    <input type="hidden" name="bokforingsmetod">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Bokföringsmetod</div>
+                    <div class="menu">
+                        <div class="item" data-value="faktureringsmetod">Faktureringsmetod</div>
+                        <div class="item" data-value="kvartalsmoms">Kontantmetoden</div>
+                        <div class="item" data-value="vetej">Vet ej / Annat</div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Uppdragsstart</label>
+                <div class="ui calendar" id="uppdragsstart">
+                    <div class="ui input left icon">
+                        <i class="calendar icon"></i>
+                        <input type="text" name="uppdragsstart" placeholder="Datum">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <div class="two fields">
+            <div class="field">
+                <label>Hur många anställda i bolaget</label>
+                <div class="ui selection dropdown employees">
+                    <input type="hidden" name="employees">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Hur många anställda i bolaget</div>
+                    <div class="menu">
+                        <div class="item" data-value="0">0-1</div>
+                        <div class="item" data-value="1">2-5</div>
+                        <div class="item" data-value="2">6-15</div>
+                        <div class="item" data-value="3">16-30</div>
+                        <div class="item" data-value="4">31-50</div>
+                        <div class="item" data-value="5">51-100</div>
+                        <div class="item" data-value="6">Fler än 100</div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Referens id</label>
+                <input type="text" name="reference" id="reference" placeholder="#D6HV9J3D">
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <label>Verksamhetsbeskrivning</label>
+        <textarea name="verksamhetsbeskrivning" id="verksamhetsbeskrivning" placeholder="Verksamhetsbeskrivning"></textarea>
+    </div>
+    <div class="field">
+        <label>Meddelande</label>
+        <textarea name="message" id="message" placeholder="Meddelande"></textarea>
+    </div>
+    <button class="ui button offert-btn" type="submit">Skicka offertförfrågan</button>
+</form>

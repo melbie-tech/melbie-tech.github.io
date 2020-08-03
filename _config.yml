@@ -1,0 +1,95 @@
+# Site settings
+title_left    : "Melbie"
+#title_right   : "space" # default: ""
+description   : "Melbie - din ekonomibyrå."
+keywords      : "Lön, Bokföring, HR, Rådgivning, Ekonomibyrå, Bokslut, Deklaration, Skatt"
+url           : "https://www.melbie.se" # site url
+baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+cover         : "" # image uri like logo/cover image for site seo
+
+company:
+  orgnr: 559251-4672
+  name: Melbie AB
+  address: 
+  zip: 
+  city: Karlstad
+  phone: 073-305 00 11
+  phone_int: +46 (0) 73 305 00 11
+  contact_email: hej@melbie.se
+  jobb_email: jobb@melbie.se
+  offert_email: hej@melbie.se
+
+google_analytics  : UA-167351167-1
+#twitter_username  : ""
+comments_enabled  : false # if enabled (set to true), please provide your disqus_username
+disqus_shortname  : ""
+#postshare_enabled : false
+
+# Build settings
+#permalink   : /:year/:month/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source      : ./
+destination : ./_site
+
+collections:
+  careers:
+    output: true
+  authors:
+    output: true
+  faqs:
+    output: true
+  category:
+    output: true
+
+defaults:
+  # Blog
+  - scope:
+      path: "_posts/blogg"
+      type: posts
+    values:
+      permalink: /blogg/:year/:month/:title
+  - scope:
+      path: "assets/images/authors"
+    values:
+      image: true
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+
+# Sass configuration
+sass:
+  sass_dir  : assets/scss
+  style     : compressed # expanded
+
+# Author settings
+author:
+  name     : "Team Melbie"
+
+plugins:
+  - jekyll-sitemap
+  - bourbon
+  - jekyll-paginate
+
+exclude:
+  - "gulp"
+  - "node_modules"
+  - "bower"
+  - "bower_components"
+  - "config.rb"
+  - "src"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - ".rvmrc"
+  - ".rbenv-version"
+  - "package.json"
+  - "gulpfile.js"
+  - "README.md"
+  - "Rakefile"
+  - "changelog.md"
+  - "script"
+  - "vendor"
+  - "thinkspace.gemspec"

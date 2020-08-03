@@ -1,0 +1,60 @@
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+$base-font-family: 'Montserrat', monospace;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: .52em;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+// $primary-color: #ff3465; // original darker pink
+$primary-color: #ffa0c5; // new darker pink
+$primary-50opacity-color: #ffa0c580; // new darker pink 50% opacity
+// $dark-color: #32325e; // original darker
+$dark-color: #534a6d; // new darker
+$dark-50opacity-color: #534a6d80; // new darker 50% opacity
+$dark-30opacity-color: #534a6d33; // new darker 30% opacity
+// $pink-color: #fbebf0; // original light pink
+$pink-color: #ffd9d8; // new light pink
+$pink-50opacity-color: #ffd9d880; // new light pink 50% opacity
+
+
+// $dark-color-transparent: #32325e80;
+$action-color: $primary-color;
+$text-color: #1e1e1e;
+$white-color: #fff;
+$black-color: #000;
+$blue-color: #0086B3;
+$dark-gray-color: #333;
+$medium-gray-color: #999;
+$light-gray-color: #ccc;
+
+// Font Colors
+//$base-font-color: rgba($dark-gray-color, .8);
+$base-font-color: $text-color;
+
+// Border
+$base-border-color: $light-gray-color;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: $white-color;
+$secondary-background-color: tint($base-border-color, 80%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba($black-color, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

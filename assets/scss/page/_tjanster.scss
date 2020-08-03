@@ -1,0 +1,125 @@
+.masthead.segment {
+
+    &.services {
+        background: url(/assets/images/large/rose.jpg) no-repeat 0px -100px fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+
+
+.ui.main.text.container.tjanster {
+
+    .ui.vertical.pointing.menu {
+        display: none;
+    }
+
+    .ui.secondary.pointing.menu {
+        border-bottom: 2px solid $dark-30opacity-color;
+        display: flex;
+        
+        .item {
+            color: $dark-color;
+        }
+
+        .active.item {
+            border-color: $primary-color;
+            font-weight: normal;
+            color: $primary-color;
+        }
+    } 
+
+    .ui.segment.content {
+        display: none;
+        border: none;
+      
+        &.active {
+          display: block;
+        }
+      }
+      
+      .ui.segment {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+
+    .lon-wrapper {
+        position: relative;
+        .lon-img {
+            width: 50%;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+    }
+    
+    .bokforing-wrapper {
+        position: relative;
+        .bokforing-img {
+            width: 50%;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+    }
+    
+    
+}
+
+
+@media (max-width: 600px) {
+
+    .masthead.segment {
+
+        &.services {
+            background: url(/assets/images/large/rose.jpg) no-repeat -100px 0px fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    }
+
+    
+
+    .ui.main.text.container.tjanster {
+        overflow: auto;
+
+        .ui.vertical.pointing.menu {
+            display: flex;
+            width: 150px;
+            float: left;
+            box-shadow: none;
+        }
+    
+        .ui.secondary.pointing.menu {
+            display: none;
+        }
+
+        .ui.segment.content {
+            float: right;
+            width: 250px;
+        }
+
+        .lon-wrapper {
+            position: relative;
+            .lon-img {
+                position: relative;
+                bottom: unset;
+                right: unset;
+            }
+        }
+    
+        .bokforing-wrapper {
+            position: relative;
+            .bokforing-img {
+                width: 100%;
+                margin: 0 auto;
+                padding: 2rem 0;
+            }
+        }
+
+    }
+
+}

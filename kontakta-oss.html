@@ -1,0 +1,73 @@
+---
+layout: default
+title: Kontakta oss
+subtitle: Kontakta oss
+---
+
+<div class="ui vertical masthead center aligned segment">
+	<div class="ui text container">
+		
+		<h2 class="ui header" style="--word-total:6; --line-total:2;">
+			Kontakta 
+                <span>
+                    <span class="word" style="--word-index:5; --line-index:1;">
+                        oss
+                    </span> 
+                </span>
+        </h2>
+			
+	</div>
+
+	<img src="{{ site.baseurl }}/assets/images/large/contact.jpg" alt="Contact us" class="contact-img">
+
+</div>
+
+<div class="contact-wrapper">
+
+	<div class="ui main text container contact">
+
+		<div class="ui vertical segment content">
+			<div class="ui middle aligned stackable grid container">
+				
+				<!-- r 1 -->
+				<div class="row">
+	
+					<!-- r 1 c 1 -->
+					<div class="eight wide column">
+						
+						<div class="company-contact-info-wrapper">
+							<h3 class="ui header">Melbie AB</h3>
+							<div class="ui list">
+								<div class="item">
+									<i class="map marker alternate large melbie-color icon"></i>
+									{{ site.company.city }}
+								</div>
+								<div class="item">
+									<i class="phone large melbie-color icon"></i>
+									{{ site.company.phone_int }}
+								</div>
+								<div class="item">
+									<i class="envelope outline large melbie-color icon"></i>
+									{{ site.company.contact_email }}
+								</div>
+							</div>
+						</div>
+					
+					</div>
+	
+					<!-- r 1 c 2 -->
+					<div class="eight wide column">
+
+						{% include contact_form.html %}
+					
+					</div>
+		
+				</div>
+	
+			</div>
+	
+		</div>
+	
+	</div>
+
+</div>

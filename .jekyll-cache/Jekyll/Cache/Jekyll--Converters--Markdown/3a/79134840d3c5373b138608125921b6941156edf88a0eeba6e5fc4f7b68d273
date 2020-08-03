@@ -1,0 +1,22 @@
+I"\<div class="ui styled fluid accordion">
+
+    
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Kan ni hjälpa mig med K3?
+            </div>
+            <div class="content">
+                <p>Vi hjälper er med K3 om så önskas.</p>
+            </div>
+    
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Kan ni även hjälpa mig med min privata deklaration?
+            </div>
+            <div class="content">
+                <p>Vi erbjuder detta som en tilläggstjänst.</p>
+            </div>
+    
+
+</div>
+:ET

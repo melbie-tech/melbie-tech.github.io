@@ -1,0 +1,33 @@
+---
+layout: default
+title: FAQ
+subtitle: FAQ
+---
+
+<div class="ui vertical masthead center aligned segment faq">
+
+    <div class="ui text container">
+        <h2 class="ui header">
+			{{ page.subtitle }}
+        </h2>
+	</div>
+
+</div>
+
+<div class="ui main text container">
+    <div class="ui vertical segment content">
+        <div class="ui middle aligned stackable grid container">
+
+            {% for faq in site.faqs %}
+                {% assign size = faq.questions | size %}
+                {% if size > 0 %}
+
+                    <h2 class="ui header">{{ faq.category }}</h2>
+                    {{ faq.content }}
+                    
+                {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+</div>

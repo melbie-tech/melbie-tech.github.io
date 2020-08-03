@@ -1,0 +1,199 @@
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+a::selection {
+  background: $primary-color;
+  color: $dark-color;
+} 
+
+a::-moz-selection {
+  background: $primary-color;
+  color: $dark-color;
+}
+
+::selection {
+  background: $primary-color;
+  color: $dark-color;
+}
+
+::-moz-selection {
+  background: $primary-color;
+  color: $dark-color;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.team-melbie {
+  font-style: italic;
+}
+
+.clearfix {
+  &:before {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+  *zoom: 1;
+}
+
+.ui.grid {
+  table{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.ui.text.container {
+  max-width: 900px !important;
+
+  &.karriar {
+    max-width: none !important;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.txt {
+  color: $text-color !important;
+}
+
+.policy-text-block, .text-block {
+  width: 100%;
+}
+
+.text-block {
+  padding-top: 1rem;
+}
+
+.ui.grid>.row {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ui.grid.container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+
+  .row {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
+
+  @media (max-width: 600px) {
+    .row {
+      margin-left: 0rem !important;
+      margin-right: 0rem !important;
+      .eight.wide.column {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.dark {
+  color: $dark-color;
+}
+
+.ui.main.text.container {
+  margin-top: 4em; 
+  margin-bottom: 4em; 
+  min-height: 300px;
+  
+  &.bli-kund {
+    margin-top: 0;
+    .ui.vertical.segment.content {
+      margin-top: 0;
+    }
+  }
+  
+  &.blog {
+    margin-top: 0;
+    margin-bottom: 0; 
+  }
+  
+  &.contact {
+    margin-top: 0;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    max-width: none !important;
+    width: 100%;
+    .ui.grid.container {
+      .row {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  &.about {
+    margin-top: 0;
+  }
+
+  &.gdpr {
+    margin-top: 0;
+  }
+
+  &.gdpr {
+    margin-top: 0;
+  }
+  
+  &.karriar {
+    margin-top: 0;
+    width: 100%;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    .ui.grid.container {
+      .row.full-width {
+          padding-top: 2em !important;
+          padding-bottom: 2em !important;
+      }
+    }
+  }
+}
+
+.ui.vertical {
+  &.main.segment.content {
+    margin-top: 4em !important;
+  }
+}
+
+.ui.grid.container {
+  .row.pink {
+    background-color: $pink-color !important;
+  }
+  .row.full-width {
+      text-align: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+  }
+
+}
+
+.left {
+  text-align: left;
+}
+

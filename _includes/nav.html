@@ -1,0 +1,19 @@
+<div class="ui borderless fixed main menu">
+  <div class="ui container">
+    <a class="item sidebar">
+      <i class="sidebar icon"></i>
+    </a>
+    
+    <a href="/" class="header item">
+      <img class="logo" src="/assets/images/logo/logo.svg">
+      <span class="logo-txt">{{ site.title_left | upcase }}</span>
+    </a>
+
+    <div class="right menu">
+      <a href="{{ '/tjanster' | prepend: site.baseurl | prepend: site.url }}" class="item">Tjänster</a>
+      <a href="{{ '/bli-kund' | prepend: site.baseurl | prepend: site.url }}" class="item">Bli kund</a>
+      <a href="{{ '/blogg' | prepend: site.baseurl | prepend: site.url }}" class="item">Blogg</a>
+      <a href="{{ '/kontakta-oss' | prepend: site.baseurl | prepend: site.url }}" class="item">Kontakta oss</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.blog.masthead.segment {
+    background-color: $dark-color;
+
+    .ui.container {
+        h2 {
+            color: $pink-color;
+        }
+    }
+}
+
+.blog-list-wrapper {
+    width: 100%;
+    // background-color: $pink-color;
+
+    h2.category-title,
+    .post-meta.date-label {
+        font-weight: 700;
+    }
+
+    a {
+        color: $dark-color;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    article.post {
+        padding: 1em;
+        p.post-meta,
+        .post-meta span,
+        .post-meta time {
+            color: $dark-color;
+        }
+
+        a {
+            // color: $primary-color;
+        }
+
+        .post-category {
+            color: $dark-color !important;
+            padding: 5px;
+            background-color: $pink-color;
+            border-radius: 0.28571429rem;
+            &:hover {
+                color: $dark-50opacity-color;
+            }
+        }
+    }
+}
