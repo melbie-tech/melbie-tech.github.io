@@ -24,10 +24,26 @@
         }
 
         @media (max-width: 600px) {
+          
           .eight.wide.column.top-header, .six.wide.column.top-header {
             margin-top: 0.5em !important;
             margin-bottom: 5.5em !important;
-          }          
+          }
+
+          h1.ui.header {
+            // margin-top: 2.5em;
+            margin-bottom: 0em;
+            font-size: 3em !important;
+            font-weight: normal;
+            color: $dark-color;
+            overflow-wrap: break-word;
+    
+            .sub.header {
+                font-size: 1.5rem !important;
+                line-height: 2.8rem;
+            }
+        }
+
         }
 
     
