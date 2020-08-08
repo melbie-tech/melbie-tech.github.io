@@ -14,6 +14,22 @@
         .row {
           margin-top: 9.5em !important;
         }
+
+        .eight.wide.column.top-header, .six.wide.column.top-header {
+          margin-top: 9.5em !important;
+        }
+
+        .row.full-width {
+          padding-top: 0px !important;
+        }
+
+        @media (max-width: 600px) {
+          .eight.wide.column.top-header, .six.wide.column.top-header {
+            margin-top: 0.5em !important;
+            margin-bottom: 5.5em !important;
+          }          
+        }
+
     
         h1.ui.header {
             // margin-top: 2.5em;

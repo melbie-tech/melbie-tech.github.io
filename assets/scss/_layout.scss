@@ -97,8 +97,14 @@ body {
     margin-right: 2rem !important;
   }
 
+  .eight.wide.column.top-header, .six.wide.column.top-header {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
+
   @media (max-width: 600px) {
-    .row {
+    // .row {
+      .row, .eight.wide.column.top-header, .six.wide.column.top-header {
       margin-left: 0rem !important;
       margin-right: 0rem !important;
       .eight.wide.column {
