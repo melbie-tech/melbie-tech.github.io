@@ -63,6 +63,13 @@ body {
 
   &.karriar {
     max-width: none !important;
+
+    @media (max-width: 600px) {
+      .ui.grid > .column:not(.row), .ui.grid > .row > .column {
+        width: 100%;
+      }
+    }
+
   }
 }
 

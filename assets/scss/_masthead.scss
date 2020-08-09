@@ -1,197 +1,207 @@
 .masthead.segment {
-    min-height: 300px;
-    padding: 1em 0em;
+  min-height: 300px;
+  padding: 1em 0em;
+  border-bottom: none !important;
+
+  .ui.vertical.segment.content {
     border-bottom: none !important;
+  }
 
-    .ui.vertical.segment.content {
-      border-bottom: none !important;
-    }
-    
-    &.main {
-        min-height: 700px;
-        background-color: $pink-color;
+  &.main {
+    min-height: 700px;
+    background-color: $pink-color;
 
-        .row {
-          margin-top: 9.5em !important;
-        }
-
-        .eight.wide.column.top-header, .six.wide.column.top-header {
-          margin-top: 9.5em !important;
-        }
-
-        .row.full-width {
-          padding-top: 0px !important;
-        }
-
-        @media (max-width: 600px) {
-          
-          .eight.wide.column.top-header, .six.wide.column.top-header {
-            margin-top: 0.5em !important;
-            margin-bottom: 5.5em !important;
-          }
-
-          h1.ui.header {
-            // margin-top: 2.5em;
-            margin-bottom: 0em;
-            font-size: 3em !important;
-            font-weight: normal;
-            color: $dark-color;
-            overflow-wrap: break-word;
-    
-            .sub.header {
-                font-size: 1.5rem !important;
-                line-height: 2.8rem;
-            }
-        }
-
-        }
-
-    
-        h1.ui.header {
-            // margin-top: 2.5em;
-            margin-bottom: 0em;
-            font-size: 4em;
-            font-weight: normal;
-            color: $dark-color;
-            overflow-wrap: break-word;
-    
-            .sub.header {
-                font-size: 2rem;
-                line-height: 2.8rem;
-            }
-        }
+    .row {
+      margin-top: 9.5em !important;
     }
 
+    .eight.wide.column.top-header,
+    .six.wide.column.top-header {
+      margin-top: 9.5em !important;
+    }
 
-    h2.ui.header {
-        margin-top: 2.5em;
+    .row.full-width {
+      padding-top: 0px !important;
+    }
+
+    h1.ui.header {
+      // margin-top: 2.5em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+      color: $dark-color;
+      overflow-wrap: break-word;
+
+      .sub.header {
+        font-size: 2rem;
+        line-height: 2.8rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .eight.wide.column.top-header,
+      .six.wide.column.top-header {
+        margin-top: 0.5em !important;
+        margin-bottom: 5.5em !important;
+      }
+
+      h1.ui.header {
+        // margin-top: 2.5em;
         margin-bottom: 0em;
-        font-size: 3em;
+        font-size: 3em !important;
         font-weight: normal;
         color: $dark-color;
         overflow-wrap: break-word;
 
         .sub.header {
-            font-size: 1.5rem;
-            line-height: 2.8rem;
+          font-size: 1.5rem !important;
+          line-height: 2.8rem;
         }
+      }
     }
+  }
 
-    /**
+  h2.ui.header {
+    margin-top: 2.5em;
+    margin-bottom: 0em;
+    font-size: 3em;
+    font-weight: normal;
+    color: $dark-color;
+    overflow-wrap: break-word;
+
+    .sub.header {
+      font-size: 1.5rem;
+      line-height: 2.8rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    h2.ui.header {
+      margin-top: 5.5em !important;
+      font-size: 1.3em !important;
+      font-weight: 900 !important;
+    }
+  }
+
+  /**
      * underline animation 
      **/
-    h1 span, h2 span, .sub.header {
-        display: inline-block;
+  h1 span,
+  h2 span,
+  .sub.header {
+    display: inline-block;
+  }
+
+  .word {
+    -webkit-animation-name: fadeInUpH1;
+    animation-name: fadeInUpH1;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: calc(0s + (0.3s * var(--line-index)));
+    animation-delay: calc(0s + (0.3s * var(--line-index)));
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  h1 .word,
+  h2 .word,
+  .sub.header {
+    -webkit-animation-name: fadeInUpH1;
+    animation-name: fadeInUpH1;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: calc(0s + (0.3s * var(--line-index)));
+    animation-delay: calc(0s + (0.3s * var(--line-index)));
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  h1 span .word::after {
+    content: "";
+    display: block;
+    margin-top: -30px;
+    margin-right: -3px;
+    padding-right: 10px;
+    height: 20px;
+    width: 100%;
+    background-color: #ffa0c5;
+  }
+
+  h2 span .word::after {
+    content: "";
+    display: block;
+    margin-top: -25px;
+    margin-right: -3px;
+    padding-right: 10px;
+    height: 15px;
+    width: 100%;
+    background-color: #ffa0c5;
+  }
+
+  h1 span .word::after,
+  h2 span .word::after {
+    -webkit-animation-name: lineAccross;
+    animation-name: lineAccross;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: calc(0.3s * var(--line-total));
+    animation-delay: calc(0.3s * var(--line-total));
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes fadeInUpH1 {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 75%, 0);
+      transform: translate3d(0, 75%, 0);
     }
 
-    .word {
-        -webkit-animation-name: fadeInUpH1;
-        animation-name: fadeInUpH1;
-        -webkit-animation-duration: .5s;
-        animation-duration: .5s;
-        -webkit-animation-delay: calc(0s + (.3s * var(--line-index)));
-        animation-delay: calc(0s + (.3s * var(--line-index)));
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeInUpH1 {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 75%, 0);
+      transform: translate3d(0, 75%, 0);
     }
 
-    h1 .word, h2 .word, .sub.header {
-        -webkit-animation-name: fadeInUpH1;
-          animation-name: fadeInUpH1;
-          -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-          -webkit-animation-delay: calc(0s + (.3s * var(--line-index)));
-          animation-delay: calc(0s + (.3s * var(--line-index)));
-          -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @-webkit-keyframes lineAccross {
+    from {
+      padding-right: 0px;
+      width: 0%;
     }
 
-    h1 span .word::after {
-      content: "";
-        display: block;
-        margin-top: -30px;
-        margin-right: -3px;
-        padding-right: 10px;
-        height: 20px;
-        width: 100%;
-        background-color: #ffa0c5;
-    }
-    
-    h2 span .word::after {
-      content: "";
-      display: block;
-      margin-top: -25px;
-      margin-right: -3px;
+    to {
       padding-right: 10px;
-      height: 15px;
       width: 100%;
-      background-color: #ffa0c5;
+    }
+  }
+
+  @keyframes lineAccross {
+    from {
+      padding-right: 0px;
+      width: 0%;
     }
 
-    h1 span .word::after, h2 span .word::after {
-        -webkit-animation-name: lineAccross;
-        animation-name: lineAccross;
-        -webkit-animation-duration: .5s;
-        animation-duration: .5s;
-        -webkit-animation-delay: calc(.3s * var(--line-total));
-        animation-delay: calc(.3s * var(--line-total));
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
+    to {
+      padding-right: 10px;
+      width: 100%;
     }
-
-    @-webkit-keyframes fadeInUpH1 {
-        from {
-          opacity: 0;
-          -webkit-transform: translate3d(0, 75%, 0);
-                  transform: translate3d(0, 75%, 0); 
-        }
-
-        to {
-          opacity: 1;
-          -webkit-transform: translate3d(0, 0, 0);
-                  transform: translate3d(0, 0, 0); 
-        } 
-    }
-      
-    @keyframes fadeInUpH1 {
-        from {
-          opacity: 0;
-          -webkit-transform: translate3d(0, 75%, 0);
-                  transform: translate3d(0, 75%, 0); 
-        }
-        
-        to {
-          opacity: 1;
-          -webkit-transform: translate3d(0, 0, 0);
-                  transform: translate3d(0, 0, 0); 
-        } 
-    }
-      
-    @-webkit-keyframes lineAccross {
-        from {
-          padding-right: 0px;
-          width: 0%; 
-        }
-        
-        to {
-          padding-right: 10px;
-          width: 100%; 
-        } 
-    }
-      
-    @keyframes lineAccross {
-        from {
-          padding-right: 0px;
-          width: 0%; 
-        }
-        
-        to {
-          padding-right: 10px;
-          width: 100%; 
-        } 
-    }
-    /**
+  }
+  /**
      * underline animation 
      **/
-
 }
