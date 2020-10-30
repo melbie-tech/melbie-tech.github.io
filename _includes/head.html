@@ -27,7 +27,7 @@
       {% if page.description %}
           {{ page.description | strip_html | strip | rstrip | strip_newlines | truncate: 160 }}
       {% else %}
-          {{ site.description }}
+          {{ site.description }}{{ ' | ' | site.locations }}{{ site.locations }}
       {% endif %}
       {%if paginator and paginator.page != 1 %} - {{ paginator.page }} {% endif %}
       {%if page.slug == 'category' %} Category: {{ page.title }}{% endif %}
