@@ -1,8 +1,8 @@
 # Site settings
 title_left    : "Melbie"
 #title_right   : "space" # default: ""
-description   : "Melbie - din ekonomibyrå."
-keywords      : "Lön, Bokföring, HR, Rådgivning, Ekonomibyrå, Bokslut, Deklaration, Skatt"
+description   : "Melbie - för företagare som vill mer | Karlstad, Stockholm"
+keywords      : "bokföring, fortnox, visma, enskild firma, aktiebolag, löner, hr specialist, ekonomibyrå, deklaration, bolagsskatt, bokslut aktiebolag, företagsrådgivning, karlstad, stockholm"
 url           : "https://www.melbie.se" # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
@@ -67,7 +67,7 @@ sass:
 
 # Author settings
 author:
-  name     : "Team Melbie"
+  name     : "Melbie AB"
 
 plugins:
   - jekyll-sitemap
