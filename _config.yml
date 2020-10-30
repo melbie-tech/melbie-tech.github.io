@@ -1,7 +1,7 @@
 # Site settings
 title_left    : "Melbie"
 #title_right   : "space" # default: ""
-description   : "Melbie - för företagare som vill mer | Karlstad, Stockholm"
+description   : "Melbie - för företagare som vill mer &#124; Karlstad - Stockholm"
 keywords      : "bokföring, fortnox, visma, enskild firma, aktiebolag, löner, hr specialist, ekonomibyrå, deklaration, bolagsskatt, bokslut aktiebolag, företagsrådgivning, karlstad, stockholm"
 url           : "https://www.melbie.se" # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
