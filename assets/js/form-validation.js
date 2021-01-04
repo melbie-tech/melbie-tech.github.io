@@ -1,5 +1,9 @@
 $(function () {
 
+    function recaptchaCallback() {
+        $('#contactSubmitBtn').removeAttr('disabled');
+    };
+
     
     $(".offert-btn").on( "click", function() {
         console.log($(".ui.form.offert-form").serializeArray());
