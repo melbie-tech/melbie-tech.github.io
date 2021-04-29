@@ -60,7 +60,7 @@ subtitle: Bli en av oss!
 
 						<p>Inga lediga tjänster för tillfället</p>
 
-						{% if size == 1 %}
+						{% elsif size == 1 %}
 
 							{% for career in site.careers %}
 							<a class="ui centered link card" href="/karriar/{{ career.link | slugify }}">
